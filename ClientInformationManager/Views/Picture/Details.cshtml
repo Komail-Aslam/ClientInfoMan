@@ -1,0 +1,58 @@
+﻿@model ClientInformationManager.Models.Picture
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Picture</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.caption)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.caption)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.path_of_picture)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.path_of_picture)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.time_info)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.time_info)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.location_info)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.location_info)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PersonInformation.first_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PersonInformation.first_name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.picture_id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

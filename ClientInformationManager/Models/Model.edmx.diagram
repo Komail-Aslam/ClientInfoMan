@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="1221aea5f07f45a5a3d03b096dae90d8" Name="Diagram1">
+        <EntityTypeShape EntityType="ClientInformationModel.Address" Width="1.5" PointX="3" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClientInformationModel.ContactInformation" Width="1.5" PointX="3" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClientInformationModel.Country" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClientInformationModel.PersonInformation" Width="1.5" PointX="0.75" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClientInformationModel.Picture" Width="1.5" PointX="3" PointY="9.5" IsExpanded="true" />
+        <AssociationConnector Association="ClientInformationModel.FK_Address_To_Countries" ManuallyRouted="false" />
+        <AssociationConnector Association="ClientInformationModel.FK_Address_To_Person" ManuallyRouted="false" />
+        <AssociationConnector Association="ClientInformationModel.FK_ContactInformation_To_PersonInformation" ManuallyRouted="false" />
+        <AssociationConnector Association="ClientInformationModel.FK_Pictures_ToPerson" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
